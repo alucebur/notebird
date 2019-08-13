@@ -170,12 +170,14 @@ The majority of this project code is Unlicensed, feel free to use it as you want
 Images used for this project are under Public Domain:
 - ***rubecula.png***: (modified from original) Allan Cox (@coxy34) in [unsplash.com](https://unsplash.com/photos/ptnG3jGVDQw) under Public Domain.
 - ***icon.svg***: El_T in [wikipedia.org](https://en.wikipedia.org/wiki/File:Information_icon.svg) under Public Domain.
+- ***0.png***: Clker-Free-Vector-Images in [pixabay.com](https://pixabay.com/vectors/blackbird-bird-wildlife-fauna-38066/) under Public Domain.
 
 ***`pyside_dynamic`*** module is a copyrighted work by Sebastian Wiesner. It was modified to make it work with PySide2.
 
 This is a copy of its corresponding MIT license:
 
 Copyright (c) 2011 Sebastian Wiesner <lunaryorn@gmail.com>
+
 Modifications by Charl Botha <cpbotha@vxlabs.com>
 * customWidgets support (registerCustomWidget() causes segfault in
   pyside 1.1.2 on Ubuntu 12.04 x86_64)
@@ -183,6 +185,7 @@ Modifications by Charl Botha <cpbotha@vxlabs.com>
 
 Original version was here:
 https://github.com/lunaryorn/snippets/blob/master/qt4/designer/pyside_dynamic.py
+
 Current version is here:
 https://gist.github.com/cpbotha/1b42a20c8f3eb9bb7cb8
 
