@@ -455,7 +455,10 @@ class CrudWindow(QtWidgets.QMainWindow):
             # Delete avatar
             user_id = self.database.current_user["id"]
             if user_id:  # Never ever remove the default avatar (0.png)
-                Path.unlink(consts.AVATAR_PATH / (str(user_id) + ".png"))
+                try:
+                    Path.unlink(consts.AVATAR_PATH / (str(user_id) + ".png"))
+                except FileNotFoundError:
+                    pass
             try:
                 self.database.set_avatar(user_id, 0)
 
@@ -537,7 +540,11 @@ class CrudWindow(QtWidgets.QMainWindow):
 
                 # Delete avatar
                 if self.database.current_user["avatar"] != 0:
-                    Path.unlink(consts.AVATAR_PATH / (str(user_id) + ".png"))
+                    try:
+                        Path.unlink(
+                            consts.AVATAR_PATH / (str(user_id) + ".png"))
+                    except FileNotFoundError:
+                        pass
 
                 # Log user out of the application
                 self.logout()
@@ -588,8 +595,8 @@ class CrudWindow(QtWidgets.QMainWindow):
     def logout(self):
         """Log user out of the application, showing login window again."""
 
-        self.database.current_user = None
         logging.info(f"`{self.database.current_user['username']}` logged out.")
+        self.database.current_user = None
 
         window = login.LoginWindow(
             None, database=self.database, pos=self.pos())
