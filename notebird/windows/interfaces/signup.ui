@@ -58,8 +58,13 @@
       <x>360</x>
       <y>60</y>
       <width>281</width>
-      <height>201</height>
+      <height>221</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
     </property>
     <property name="title">
      <string>Sign up</string>
@@ -82,6 +87,11 @@
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
         <widget class="QLabel" name="label_username">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Username:</string>
          </property>
@@ -89,11 +99,22 @@
        </item>
        <item>
         <widget class="ClickableLineEdit" name="line_edit_username">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>25</height>
+          </size>
+         </property>
          <property name="maximumSize">
           <size>
-           <width>200</width>
-           <height>20</height>
+           <width>180</width>
+           <height>25</height>
           </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
          </property>
          <property name="placeholderText">
           <string>Enter username...</string>
@@ -106,6 +127,11 @@
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
         <widget class="QLabel" name="label_password">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Password:</string>
          </property>
@@ -113,11 +139,22 @@
        </item>
        <item>
         <widget class="ClickableLineEdit" name="line_edit_password">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>25</height>
+          </size>
+         </property>
          <property name="maximumSize">
           <size>
-           <width>200</width>
-           <height>20</height>
+           <width>180</width>
+           <height>25</height>
           </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
          </property>
          <property name="echoMode">
           <enum>QLineEdit::Password</enum>
@@ -133,6 +170,11 @@
       <layout class="QHBoxLayout" name="horizontalLayout_4">
        <item>
         <widget class="QLabel" name="label_name">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Full name:</string>
          </property>
@@ -140,14 +182,25 @@
        </item>
        <item>
         <widget class="ClickableLineEdit" name="line_edit_name">
-         <property name="maximumSize">
+         <property name="minimumSize">
           <size>
-           <width>200</width>
-           <height>20</height>
+           <width>0</width>
+           <height>25</height>
           </size>
          </property>
+         <property name="maximumSize">
+          <size>
+           <width>180</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
          <property name="placeholderText">
-          <string>Enter real name...</string>
+          <string>Enter full name...</string>
          </property>
         </widget>
        </item>
@@ -155,6 +208,13 @@
      </item>
      <item>
       <widget class="QLabel" name="label_message">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="styleSheet">
         <string notr="true">.QLabel {
     color: #ca0000;
@@ -168,6 +228,19 @@
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_signup">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>14</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Create account</string>
        </property>
@@ -191,15 +264,23 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>510</x>
+      <x>460</x>
       <y>310</y>
-      <width>121</width>
-      <height>25</height>
+      <width>181</width>
+      <height>35</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_3">
-     <item>
+     <property name="bottomMargin">
+      <number>10</number>
+     </property>
+     <item alignment="Qt::AlignRight">
       <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Go back</string>
        </property>
@@ -207,6 +288,19 @@
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_login">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>14</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Login</string>
        </property>
@@ -215,17 +309,6 @@
     </layout>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>670</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <customwidgets>
   <customwidget>

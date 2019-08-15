@@ -50,45 +50,46 @@ class SignUpWindow(QtWidgets.QMainWindow):
         password = self.line_edit_password.text()
         name = self.line_edit_name.text()
 
-        if validate_username(user):
-            if validate_pwd(password):
-                if validate_name(name):
-                    try:
-                        self.database.create_user(user, password, name)
-                    except exceptions.DatabaseError as e:
-                        self.label_message.setText("Internal error.")
-                        logging.warning(e.message)
+        validations = {
+            "username": validate_username(user),
+            "password": validate_pwd(password),
+            "name": validate_name(name)}
 
-                    except exceptions.ValidationError as e:
-                        self.label_message.setText(
-                            f"Invalid field {', '.join(e.columns)}")
-                        logging.debug(f"`{e.columns}` - {e.message}")
+        if all(validations.values()):
+            try:
+                self.database.create_user(user, password, name)
+            except exceptions.DatabaseError as e:
+                self.label_message.setText("Internal error.")
+                logging.warning(e.message)
 
-                    except exceptions.UsernameExistsError as e:
-                        self.label_message.setText(
-                            f"User {user} already exists.")
-                        logging.debug(e.message)
-
-                    else:
-                        self.label_message.setText(
-                            f"User {user} created. You can login now.")
-                        logging.info(
-                            f"`{user}`'s info inserted in the database.")
-                        self.line_edit_username.clear()
-                        self.line_edit_password.clear()
-                        self.line_edit_name.clear()
-
-                else:
-                    self.label_message.setText(
-                        "Please enter your full name (min. 2 words).")
-                    logging.debug("The name entered is too short.")
-            else:
+            except exceptions.ValidationError as e:
                 self.label_message.setText(
-                    "Weak password (min. 8 characters).")
-                logging.debug("The password entered is too weak.")
-        else:
+                    f"Invalid field {', '.join(e.columns)}")
+                logging.debug(f"`{e.columns}` - {e.message}")
+
+            except exceptions.UsernameExistsError as e:
+                self.label_message.setText(f"User {user} already exists.")
+                logging.debug(e.message)
+
+            else:
+                self.label_message.setText("User created. You can login now.")
+                logging.info(f"`{user}`'s info inserted in the database.")
+                self.line_edit_username.clear()
+                self.line_edit_password.clear()
+                self.line_edit_name.clear()
+
+        elif not validations['username']:
             self.label_message.setText("Invalid username (min. 5 characters).")
             logging.debug("The username entered is too short.")
+
+        elif not validations['password']:
+            self.label_message.setText("Weak password (min. 8 characters).")
+            logging.debug("The password entered is too weak.")
+
+        elif not validations['name']:
+            self.label_message.setText(
+                "Please enter full name (min. 2 words).")
+            logging.debug("The name entered is too short.")
 
     def to_login(self):
         """Close current window and show new one."""
