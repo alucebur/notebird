@@ -39,7 +39,7 @@
        <rect>
         <x>130</x>
         <y>30</y>
-        <width>285</width>
+        <width>310</width>
         <height>68</height>
        </rect>
       </property>
@@ -48,11 +48,22 @@
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item alignment="Qt::AlignLeft">
           <widget class="QLabel" name="label_3">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
            <property name="maximumSize">
             <size>
-             <width>43</width>
+             <width>100</width>
              <height>16</height>
             </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
            </property>
            <property name="text">
             <string>Author:</string>
@@ -69,9 +80,14 @@
            </property>
            <property name="maximumSize">
             <size>
-             <width>230</width>
+             <width>200</width>
              <height>16</height>
             </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
            </property>
            <property name="text">
             <string>p</string>
@@ -82,19 +98,24 @@
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_3">
-         <item>
+         <item alignment="Qt::AlignLeft">
           <widget class="QLabel" name="label">
            <property name="minimumSize">
             <size>
-             <width>75</width>
+             <width>100</width>
              <height>16</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>75</width>
+             <width>100</width>
              <height>16</height>
             </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
            </property>
            <property name="text">
             <string>Notes created:</string>
@@ -115,6 +136,11 @@
              <height>16</height>
             </size>
            </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
            <property name="text">
             <string>p</string>
            </property>
@@ -128,15 +154,20 @@
           <widget class="QLabel" name="label_6">
            <property name="minimumSize">
             <size>
-             <width>75</width>
+             <width>100</width>
              <height>16</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>75</width>
+             <width>100</width>
              <height>16</height>
             </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
            </property>
            <property name="text">
             <string>Last update:</string>
@@ -156,6 +187,11 @@
              <width>200</width>
              <height>16</height>
             </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
            </property>
            <property name="text">
             <string>p</string>
@@ -188,22 +224,35 @@
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
-        <x>430</x>
+        <x>380</x>
         <y>240</y>
-        <width>72</width>
-        <height>22</height>
+        <width>92</width>
+        <height>26</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_12">
        <item>
         <widget class="QLabel" name="label_8">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
          <property name="text">
           <string>Note:</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QSpinBox" name="spinBox"/>
+        <widget class="QSpinBox" name="spinBox">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -212,8 +261,8 @@
        <rect>
         <x>380</x>
         <y>130</y>
-        <width>240</width>
-        <height>71</height>
+        <width>260</width>
+        <height>74</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_6">
@@ -221,6 +270,23 @@
         <layout class="QHBoxLayout" name="horizontalLayout_14">
          <item>
           <widget class="QLabel" name="label_9">
+           <property name="minimumSize">
+            <size>
+             <width>90</width>
+             <height>18</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>90</width>
+             <height>18</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
            <property name="text">
             <string>Creation date:</string>
            </property>
@@ -230,15 +296,20 @@
           <widget class="QLabel" name="creation_date_label">
            <property name="minimumSize">
             <size>
-             <width>150</width>
+             <width>160</width>
              <height>17</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>150</width>
+             <width>160</width>
              <height>17</height>
             </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
            </property>
            <property name="text">
             <string>p</string>
@@ -251,6 +322,23 @@
         <layout class="QHBoxLayout" name="horizontalLayout_15">
          <item>
           <widget class="QLabel" name="label_10">
+           <property name="minimumSize">
+            <size>
+             <width>90</width>
+             <height>18</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>90</width>
+             <height>18</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
            <property name="text">
             <string>Last update:</string>
            </property>
@@ -260,15 +348,20 @@
           <widget class="QLabel" name="last_update_label">
            <property name="minimumSize">
             <size>
-             <width>150</width>
+             <width>160</width>
              <height>17</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>150</width>
+             <width>160</width>
              <height>17</height>
             </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
            </property>
            <property name="text">
             <string>p</string>
@@ -281,6 +374,23 @@
         <layout class="QHBoxLayout" name="horizontalLayout_16">
          <item>
           <widget class="QLabel" name="label_11">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>18</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>18</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
            <property name="text">
             <string>Number of words:</string>
            </property>
@@ -288,6 +398,11 @@
          </item>
          <item alignment="Qt::AlignLeft">
           <widget class="QLabel" name="number_words_label">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
            <property name="text">
             <string>p</string>
            </property>
@@ -351,6 +466,11 @@
             <height>16777215</height>
            </size>
           </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
           <property name="text">
            <string>p</string>
           </property>
@@ -391,10 +511,20 @@
            <height>149</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
         </widget>
        </item>
        <item>
         <widget class="QGroupBox" name="crud_group_box">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
          <property name="title">
           <string>Notes:</string>
          </property>
@@ -404,6 +534,19 @@
             <property name="enabled">
              <bool>false</bool>
             </property>
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
             <property name="text">
              <string>New</string>
             </property>
@@ -411,6 +554,19 @@
           </item>
           <item>
            <widget class="QPushButton" name="btn_update">
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
             <property name="text">
              <string>Save</string>
             </property>
@@ -421,6 +577,19 @@
             <property name="enabled">
              <bool>false</bool>
             </property>
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
             <property name="text">
              <string>Delete</string>
             </property>
@@ -430,6 +599,19 @@
            <widget class="QPushButton" name="btn_discard_note">
             <property name="enabled">
              <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
             </property>
             <property name="text">
              <string>Cancel</string>
@@ -445,21 +627,34 @@
       <property name="geometry">
        <rect>
         <x>430</x>
-        <y>160</y>
-        <width>72</width>
-        <height>22</height>
+        <y>210</y>
+        <width>92</width>
+        <height>26</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_11">
        <item>
         <widget class="QLabel" name="label_7">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
          <property name="text">
           <string>Note:</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QSpinBox" name="spinBox_2"/>
+        <widget class="QSpinBox" name="spinBox_2">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -471,6 +666,13 @@
         <width>341</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="styleSheet">
        <string notr="true">.QLabel {
@@ -518,8 +720,15 @@
          <property name="maximumSize">
           <size>
            <width>175</width>
-           <height>23</height>
+           <height>30</height>
           </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
          <property name="text">
           <string>Upload new avatar</string>
@@ -534,8 +743,15 @@
          <property name="maximumSize">
           <size>
            <width>175</width>
-           <height>23</height>
+           <height>30</height>
           </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
          <property name="text">
           <string>Remove avatar</string>
@@ -549,8 +765,8 @@
        <rect>
         <x>281</x>
         <y>41</y>
-        <width>252</width>
-        <height>137</height>
+        <width>281</width>
+        <height>167</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -558,6 +774,23 @@
         <layout class="QHBoxLayout" name="horizontalLayout_8">
          <item>
           <widget class="QLabel" name="username_label_2">
+           <property name="minimumSize">
+            <size>
+             <width>65</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>65</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
            <property name="text">
             <string>Username:</string>
            </property>
@@ -568,11 +801,22 @@
            <property name="enabled">
             <bool>false</bool>
            </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>25</height>
+            </size>
+           </property>
            <property name="maximumSize">
             <size>
-             <width>194</width>
-             <height>20</height>
+             <width>200</width>
+             <height>25</height>
             </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
            </property>
            <property name="placeholderText">
             <string>Enter username...</string>
@@ -585,6 +829,23 @@
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
           <widget class="QLabel" name="name_label_2">
+           <property name="minimumSize">
+            <size>
+             <width>65</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>65</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
            <property name="text">
             <string>Full name:</string>
            </property>
@@ -595,11 +856,22 @@
            <property name="enabled">
             <bool>false</bool>
            </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>25</height>
+            </size>
+           </property>
            <property name="maximumSize">
             <size>
-             <width>194</width>
-             <height>20</height>
+             <width>200</width>
+             <height>25</height>
             </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
            </property>
            <property name="placeholderText">
             <string>Enter real name...</string>
@@ -610,8 +882,28 @@
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
          <item>
           <widget class="QLabel" name="pwd_label_2">
+           <property name="minimumSize">
+            <size>
+             <width>65</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>65</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
            <property name="text">
             <string>Password:</string>
            </property>
@@ -622,11 +914,22 @@
            <property name="enabled">
             <bool>false</bool>
            </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>25</height>
+            </size>
+           </property>
            <property name="maximumSize">
             <size>
-             <width>128</width>
-             <height>20</height>
+             <width>130</width>
+             <height>25</height>
             </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
            </property>
            <property name="echoMode">
             <enum>QLineEdit::Password</enum>
@@ -646,6 +949,11 @@
              <width>60</width>
              <height>17</height>
             </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
            </property>
            <property name="text">
             <string>change</string>
@@ -669,16 +977,32 @@
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_13">
+         <property name="bottomMargin">
+          <number>5</number>
+         </property>
          <item>
           <widget class="QPushButton" name="btn_discard_changes">
            <property name="enabled">
             <bool>false</bool>
            </property>
+           <property name="minimumSize">
+            <size>
+             <width>93</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="maximumSize">
             <size>
              <width>93</width>
-             <height>23</height>
+             <height>30</height>
             </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
            </property>
            <property name="text">
             <string>Cancel</string>
@@ -690,11 +1014,24 @@
            <property name="enabled">
             <bool>false</bool>
            </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="maximumSize">
             <size>
-             <width>93</width>
-             <height>23</height>
+             <width>120</width>
+             <height>30</height>
             </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
            </property>
            <property name="text">
             <string>Save changes</string>
@@ -710,9 +1047,16 @@
        <rect>
         <x>280</x>
         <y>210</y>
-        <width>251</width>
+        <width>281</width>
         <height>16</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="styleSheet">
        <string notr="true">.QLabel {

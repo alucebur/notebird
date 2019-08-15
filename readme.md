@@ -31,6 +31,7 @@ The `crud` window is divided in 3 tabs:
 - pathlib - create path to files independently of the OS used
 - sqlite3 - lightweight database to store data
 - passlib - hashed and salted passwords
+- argparse - parse command line options
 - PySide2 - python wrapper for the Qt framework
 - pillow (PIL) - avatar creation
 
@@ -63,7 +64,12 @@ Run the application:
 - Other:
 
         python notebird/notebird.py
-        
+
+If you prefer it, you can start the application in `dark mode`. To do so, run the program with the option `-d` or `--dark` (running the program with the option `-h` or `--help` will show the help):
+
+        pipenv run notebird/notebird.py --dark
+        python notebird/notebird.py --dark
+
 This application uses the logging module to send info to standard output. By default the log level is set to DEBUG. You can change it to INFO editing this line in `notebird.py` as follow:
 ```python
     logging.basicConfig(format=format, level=logging.INFO)
@@ -77,6 +83,8 @@ This application uses the logging module to send info to standard output. By def
 <img src="docs/screenshots/note.png" width="256" style="margin: 3px 5px" /><img src="docs/screenshots/edition.png" width="256" style="margin: 3px 5px" />
 
 <img src="docs/screenshots/info.png" width="256" style="margin: 3px 5px" /><img src="docs/screenshots/avatar.png" width="256" style="margin: 3px 5px" />
+
+<img src="docs/screenshots/login_dark.png" width="256" style="margin: 3px 5px" /><img src="docs/screenshots/edition_dark.png" width="256" style="margin: 3px 5px" />
 
 ---
 
@@ -171,6 +179,9 @@ Images used for this project are under Public Domain:
 - ***rubecula.png***: (modified from original) Allan Cox (@coxy34) in [unsplash.com](https://unsplash.com/photos/ptnG3jGVDQw) under Public Domain.
 - ***icon.svg***: El_T in [wikipedia.org](https://en.wikipedia.org/wiki/File:Information_icon.svg) under Public Domain.
 - ***0.png***: Clker-Free-Vector-Images in [pixabay.com](https://pixabay.com/vectors/blackbird-bird-wildlife-fauna-38066/) under Public Domain.
+- ***White_arrow_up.svg***: Madecco in [wikipedia.org](https://commons.wikimedia.org/wiki/File:White_arrow_up.svg) under Public Domain.
+- ***White_arrow_down.svg***: Madecco in [wikipedia.org](https://commons.wikimedia.org/wiki/File:White_arrow_down.svg) under Public Domain.
+- ***White_dot.svg***: Sameboat in [wikipedia.org](https://en.wikipedia.org/wiki/File:White_dot.svg) under Public Domain.
 
 ***`pyside_dynamic`*** module is a copyrighted work by Sebastian Wiesner. It was modified to make it work with PySide2.
 
