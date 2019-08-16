@@ -109,7 +109,10 @@ This application uses the logging module to send info to standard output. By def
 │    │   ├── interfaces
 │    │   │   ├── assets
 │    │   │   │   ├── icon.svg
-│    │   │   │   └── bird.png
+│    │   │   │   ├── rubecula.png
+│    │   │   │   ├── White_arrow_down.svg
+│    │   │   │   ├── White_arrow_up.svg
+│    │   │   │   └── White_dot.svg
 │    │   │   ├── crud.ui
 │    │   │   ├── login.ui
 │    │   │   └── signup.ui
@@ -117,7 +120,8 @@ This application uses the logging module to send info to standard output. By def
 │    │   ├── crud.py
 │    │   ├── login.py
 │    │   └── signup.py
-│    └── notebird.py
+│    ├── notebird.py
+│    └── style.qss
 ├──  docs
 │    ├── layouts
 │    │   └── default.html
@@ -141,6 +145,7 @@ This application uses the logging module to send info to standard output. By def
 
 - ./notebird
   - `notebird.py`: main module that initializes all the necessary stuff
+  - `style.qss`: stylesheet for dark-mode
 
 - ./notebird/db:
   - `dbhelper.py`: module to connect and operate with the database
