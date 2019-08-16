@@ -21,6 +21,10 @@ QMenuBar::item {
 }
 QMenuBar::item:selected { background: #00375d; }
 QMenuBar::item:pressed { background: #194b6d; }
+QStatusBar {
+    color: #d4d4c8;
+    border: 1px solid #00375d;
+}
 QMessageBox {
     background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
                                       stop:0 #00273d, stop:1 black);
